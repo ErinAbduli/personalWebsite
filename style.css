@@ -409,3 +409,7 @@ footer {
 footer p {
     text-align: center;
 }
+
+.description {
+    margin-bottom: 1.5rem;
+}
