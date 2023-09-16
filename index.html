@@ -8,10 +8,11 @@
     <title>EA</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsivnes.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-    <nav id="navbar">
+    <nav id="navbar" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
         <div class="logo">
             Erin Abduli
         </div>
@@ -43,19 +44,21 @@
         </div>
     </nav>
     <section id="profile">
-        <div class="pic-container">
+        <div class="pic-container" data-aos="fade-up" data-aos-duration="1000">
             <img src="./assets/profile-pic.png" alt="">
         </div>
         <div class="text">
-            <p class="text-p1">Hello, I'm</p>
-            <h1 class="title">Erin Abduli</h1>
-            <p class="text-p2">Software Dev & Entrepreneur</p>
-            <div class="btn-container">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <p class="text-p1">Hello, I'm</p>
+                <h1 class="title">Erin Abduli</h1>
+                <p class="text-p2">Software Dev & Entrepreneur</p>
+            </div>
+            <div class="btn-container" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="100">
                 <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download
                     CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div>
-            <div id="socials-container">
+            <div id="socials-container" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="100">
                 <img src="./assets/linkedin.png" alt="" class="icon" onclick="window.open('https://linkedin.com')">
                 <img src="./assets/github.png" alt="" class="icon"
                     onclick="window.open('https://github.com/ErinAbduli')">
@@ -66,11 +69,11 @@
         <p class="text-p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
-            <div class="pic-container">
+            <div class="pic-container" data-aos="fade-right" data-aos-duration="1000">
                 <img class="about-pic" src="./assets/about-pic.png" alt="profile pic">
             </div>
             <div class="about-details-container">
-                <div class="about-containers">
+                <div class="about-containers" data-aos="fade-down" data-aos-duration="1000">
                     <div class="details-containers">
                         <img class="icon" src="./assets/experience.png" alt="experince icon">
                         <h3>Experince</h3>
@@ -82,7 +85,7 @@
                         <p>High School <br>Student</p>
                     </div>
                 </div>
-                <div class="text-conatiner">
+                <div class="text-conatiner" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="100">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quaerat quasi eveniet.
                         Aperiam, consectetur in mollitia nam eum maxime dolores velit non dolorum consequuntur ut
                         voluptate aspernatur magni nulla commodi. Veniam officia repellat enim neque distinctio,
@@ -97,7 +100,7 @@
         <h1 class="title">Experince</h1>
         <div class="experience-details-container">
             <div class="about-containers">
-                <div class="details-containers">
+                <div class="details-containers" data-aos="fade-right" data-aos-duration="1000">
                     <h2 class="experience-sub-title">Frontend Development</h2>
                     <div class="article-container">
                         <article>
@@ -138,7 +141,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="details-containers">
+                <div class="details-containers" data-aos="fade-left" data-aos-duration="1000">
                     <h2 class="experience-sub-title">Backend Development</h2>
                     <div class="article-container">
                         <article>
@@ -187,7 +190,7 @@
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
-                <div class="details-containers color-container">
+                <div class="details-containers color-container" data-aos="fade-up" data-aos-duration="1000">
                     <div class="article-container">
                         <img class="project-img" src="./assets/musselscorner.png" alt="project 1">
                     </div>
@@ -205,7 +208,8 @@
                         Live Demo
                     </button>
                 </div>
-                <div class="details-containers color-container">
+                <div class="details-containers color-container" data-aos="fade-up" data-aos-delay="300"
+                    data-aos-duration="1000">
                     <div class="article-container">
                         <img class="project-img" src="./assets/project-2.png" alt="project 2">
                     </div>
@@ -219,7 +223,8 @@
                         Live Demo
                     </button>
                 </div>
-                <div class="details-containers color-container">
+                <div class="details-containers color-container" data-aos="fade-up" data-aos-delay="600"
+                    data-aos-duration="1000">
                     <div class="article-container">
                         <img class="project-img" src="./assets/project-3.png" alt="project 3">
                     </div>
@@ -240,7 +245,7 @@
     <section id="contact">
         <p class="text-p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
+        <div class="contact-info-upper-container" data-aos="flip-up" data-aos-duration="1000">
             <div class="contact-info-container">
                 <img class="icon contact-icon email-icon" src="./assets/email.png" alt="email icon">
                 <p>
@@ -267,7 +272,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer data-aos="fade-up" data-aos-duration="1000">
         <nav>
             <div class="nav-links">
                 <ul class="nav-links">
@@ -281,6 +286,10 @@
         <p>Copyright &#169; 2023 Erin Abduli. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
