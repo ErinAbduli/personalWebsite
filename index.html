@@ -22,6 +22,8 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png"
+                        src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt=""></li>
             </ul>
         </div>
     </nav>
@@ -40,6 +42,8 @@
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><img id="modeToggle2" class="icon color-icon" src="./assets/theme_light.png"
+                        src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt=""></li>
             </div>
         </div>
     </nav>
@@ -58,10 +62,11 @@
                     CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div>
-            <div id="socials-container" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="100">
-                <img src="./assets/linkedin.png" alt="" class="icon" onclick="window.open('https://linkedin.com')">
-                <img src="./assets/github.png" alt="" class="icon"
-                    onclick="window.open('https://github.com/ErinAbduli')">
+            <div id="socials-container" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
+                <img src="./assets/linkedin.png" src-light="./assets/linkedin.png" src-dark="./assets/linkedin_dark.png"
+                    alt="" class="icon linkedin-icon" onclick="window.open('https://linkedin.com')">
+                <img src="./assets/github.png" src-light="./assets/github.png" src-dark="./assets/github_dark.png"
+                    alt="" class="icon github-icon" onclick="window.open('https://github.com/ErinAbdulli')">
             </div>
         </div>
     </section>
@@ -75,12 +80,14 @@
             <div class="about-details-container">
                 <div class="about-containers" data-aos="fade-down" data-aos-duration="1000">
                     <div class="details-containers">
-                        <img class="icon" src="./assets/experience.png" alt="experince icon">
+                        <img class="icon" src="./assets/experience.png" src-light="./assets/experience.png"
+                            src-dark="./assets/experience_dark.png" alt="experince icon">
                         <h3>Experince</h3>
                         <p>2+ years <br>Software Development</p>
                     </div>
                     <div class="details-containers">
-                        <img class="icon" src="./assets/education.png" alt="education icon">
+                        <img class="icon" src="./assets/education.png" src-light="./assets/education.png"
+                            src-dark="./assets/education_dark.png" alt="education icon">
                         <h3>Education</h3>
                         <p>High School <br>Student</p>
                     </div>
@@ -93,7 +100,9 @@
                 </div>
             </div>
         </div>
-        <img class="icon arrow" src="./assets/arrow.png" alt="arrow icon" onclick="location.href='./#experience'">
+        <img data-aos="fade-up" data-aos-duration="1000" class="icon arrow" src="./assets/arrow.png"
+            src-light="./assets/arrow.png" src-dark="./assets/arrow_dark.png" alt="arrow icon"
+            onclick="location.href='./#experience'">
     </section>
     <section id="experience">
         <p class="text-p1">Explore My</p>
@@ -104,37 +113,44 @@
                     <h2 class="experience-sub-title">Frontend Development</h2>
                     <div class="article-container">
                         <article>
-                            <img class="icon" src="./assets/html5.svg" alt="">
+                            <img class="icon" src="./assets/html5.svg" src-light="./assets/html5.svg"
+                                src-dark="./assets/html5_dark.svg" alt="">
                             <div>
                                 <h3>HTML</h3>
                             </div>
                         </article>
                         <article>
-                            <img class="icon" src="./assets/css3-alt.svg" alt="">
+                            <img class="icon" src="./assets/css3-alt.svg" src-light="./assets/css3-alt.svg"
+                                src-dark="./assets/css3-alt_dark.svg" alt="">
                             <div>
                                 <h3>CSS</h3>
                             </div>
                         </article>
                         <article>
-                            <img class="icon" src="./assets/sass.svg" alt="">
+                            <img class="icon" src="./assets/sass.svg" src-light="./assets/sass.svg"
+                                src-dark="./assets/sass_dark.svg" alt="">
                             <div>
                                 <h3>SASS</h3>
                             </div>
                         </article>
                         <article>
-                            <img class="icon" src="./assets/square-js.svg" alt="">
+                            <img class="icon" src="./assets/square-js.svg" src-light="./assets/square-js.svg"
+                                src-dark="./assets/square-js_dark.svg" alt="">
                             <div>
                                 <h3>Javascript</h3>
                             </div>
                         </article>
                         <article>
-                            <img class="icon" id="ts" src="./assets/typescript-16-svgrepo-com.svg" alt="">
+                            <img class="icon" id="ts" src="./assets/typescript-16-svgrepo-com.svg"
+                                src-light="./assets/typescript-16-svgrepo-com.svg"
+                                src-dark="./assets/typescript-16-svgrepo-com_dark.svg" alt="">
                             <div>
                                 <h3>Typescript</h3>
                             </div>
                         </article>
                         <article>
-                            <img class="icon" src="./assets/react.svg" alt="">
+                            <img class="icon" src="./assets/react.svg" src-light="./assets/react.svg"
+                                src-dark="./assets/react_dark.svg" alt="">
                             <div>
                                 <h3>ReactJS</h3>
                             </div>
@@ -145,37 +161,47 @@
                     <h2 class="experience-sub-title">Backend Development</h2>
                     <div class="article-container">
                         <article>
-                            <img class="icon" src="./assets/node-js (1).svg" alt="">
+                            <img class="icon" src="./assets/node-js (1).svg" src-light="./assets/node-js (1).svg"
+                                src-dark="./assets/node-js_dark.svg" alt="">
                             <div>
                                 <h3>NodeJS</h3>
                             </div>
                         </article>
                         <article>
-                            <img class="icon" src="./assets/icons8-express-js-50.png" alt="">
+                            <img class="icon" src="./assets/icons8-express-js-50.png"
+                                src-light="./assets/icons8-express-js-50.png"
+                                src-dark="./assets/express-svgrepo-com_dark.svg" alt="">
                             <div>
                                 <h3>ExpressJS</h3>
                             </div>
                         </article>
                         <article>
-                            <img class="icon" src="./assets/python.svg" alt="">
+                            <img class="icon" src="./assets/python.svg" src-light="./assets/python.svg"
+                                src-dark="./assets/python_dark.svg" alt="">
                             <div>
                                 <h3>Python</h3>
                             </div>
                         </article>
                         <article>
-                            <img class="icon" src="./assets/django-svgrepo-com.svg" alt="">
+                            <img class="icon" src="./assets/django-svgrepo-com.svg"
+                                src-light="./assets/django-svgrepo-com.svg"
+                                src-dark="./assets/django-svgrepo-com_dark.svg" alt="">
                             <div>
                                 <h3>Django</h3>
                             </div>
                         </article>
                         <article>
-                            <img class="icon" src="./assets/mysql-svgrepo-com.svg" alt="">
+                            <img class="icon" src="./assets/mysql-svgrepo-com.svg"
+                                src-light="./assets/mysql-svgrepo-com.svg"
+                                src-dark="./assets/mysql-svgrepo-com_dark.svg" alt="">
                             <div>
                                 <h3>MySQL</h3>
                             </div>
                         </article>
                         <article>
-                            <img class="icon" src="./assets/mongodb-svgrepo-com.svg" alt="">
+                            <img class="icon" src="./assets/mongodb-svgrepo-com.svg"
+                                src-light="./assets/mongodb-svgrepo-com.svg"
+                                src-dark="./assets/mongodb-svgrepo-com_dark.svg" alt="">
                             <div>
                                 <h3>MongoDB</h3>
                             </div>
@@ -183,7 +209,9 @@
                     </div>
                 </div>
             </div>
-            <img class="icon arrow" src="./assets/arrow.png" alt="arrow icon" onclick="location.href='./#projects'">
+            <img data-aos="fade-up" data-aos-duration="1000" class="icon arrow" src="./assets/arrow.png"
+                src-light="./assets/arrow.png" src-dark="./assets/arrow_dark.png" alt="arrow icon"
+                onclick="location.href='./#projects'">
     </section>
     <section id="projects">
         <p class="text-p1">Browse My Recent</p>
@@ -240,32 +268,40 @@
                 </div>
             </div>
         </div>
-        <img class="icon arrow" src="./assets/arrow.png" alt="arrow icon" onclick="location.href='./#contact'">
+        <img data-aos="fade-up" data-aos-duration="1000" class="icon arrow" src="./assets/arrow.png"
+            src-light="./assets/arrow.png" src-dark="./assets/arrow_dark.png" alt="arrow icon"
+            onclick="location.href='./#contact'">
     </section>
     <section id="contact">
         <p class="text-p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container" data-aos="flip-up" data-aos-duration="1000">
             <div class="contact-info-container">
-                <img class="icon contact-icon email-icon" src="./assets/email.png" alt="email icon">
+                <img class="icon contact-icon email-icon" src="./assets/email.png" src-light="./assets/email.png"
+                    src-dark="./assets/email_dark.png" alt="email icon">
                 <p>
                     <a href="mailto:erinabduli7@gmail.com">erinabduli7@gmail.com</a>
                 </p>
             </div>
             <div class="contact-info-container">
-                <img class="icon contact-icon" src="./assets/linkedin.png" alt="linkedin icon">
+                <img src="./assets/linkedin.png" src-light="./assets/linkedin.png" src-dark="./assets/linkedin_dark.png"
+                    alt="" class="icon linkedin-icon" onclick="window.open('https://linkedin.com')">
                 <p>
                     <a href="https://www.linkedin.com/">LinkedIn</a>
                 </p>
             </div>
             <div class="contact-info-container">
-                <img class="icon contact-icon" src="./assets/twitter-round-svgrepo-com.svg" alt="twitter icon">
+                <img class="icon contact-icon" src="./assets/twitter-round-svgrepo-com.svg"
+                    src-light="./assets/twitter-round-svgrepo-com.svg"
+                    src-dark="./assets/twitter-round-svgrepo-com_dark.svg" alt="twitter icon">
                 <p>
                     <a href="https://www.x.com/">Twitter</a>
                 </p>
             </div>
             <div class="contact-info-container">
-                <img class="icon contact-icon" src="./assets/instagram-round-svgrepo-com.svg" alt="linkedin icon">
+                <img class="icon contact-icon" src="./assets/instagram-round-svgrepo-com.svg"
+                    src-light="./assets/instagram-round-svgrepo-com.svg"
+                    src-dark="./assets/instagram-round-svgrepo-com_dark.svg" alt="linkedin icon">
                 <p>
                     <a href="https://www.instagram.com/">Instagram</a>
                 </p>
