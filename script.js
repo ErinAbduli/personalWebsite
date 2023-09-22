@@ -13,29 +13,6 @@ const btn2 = document.getElementById("modeToggle2");
 const themeIcons = document.querySelectorAll(".icon");
 const currentTheme = localStorage.getItem("theme");
 
-if (currentTheme === "dark") {
-    setDarkMode();
-}
-
-btn.addEventListener("click", () => {
-    setTheme();
-})
-
-btn2.addEventListener("click", () => {
-    setTheme();
-})
-
-
-function setTheme() {
-    let currentTheme = document.body.getAttribute("theme");
-
-    if (currentTheme === "dark") {
-        setLightMode();
-    } else {
-        setDarkMode();
-    }
-}
-
 
 function setDarkMode() {
     document.body.setAttribute("theme", "dark");
@@ -54,3 +31,31 @@ function setLightMode() {
         icon.src = icon.getAttribute("src-light")
     });
 }
+
+function setTheme() {
+    let currentTheme = document.body.getAttribute("theme");
+
+    if (currentTheme === "dark") {
+        setLightMode();
+    } else {
+        setDarkMode();
+    }
+}
+
+
+if (currentTheme === "dark") {
+    setDarkMode();
+}
+
+btn.addEventListener("click", () => {
+    setTimeout(() => {
+        setTheme();
+    }, 50)
+})
+
+btn2.addEventListener("click", () => {
+    setTimeout(() => {
+        setTheme();
+    }, 50)
+})
+
