@@ -85,8 +85,16 @@
         flex-wrap: wrap;
     }
 
+    .contact-info-upper-container {
+        gap: 1rem;
+    }
+
     .contact-info-container {
         margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
     }
 
     .contact-info-container p,
