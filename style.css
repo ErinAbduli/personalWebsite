@@ -39,6 +39,15 @@ html {
     padding: 0;
 }
 
+#profile,
+#about {
+    overflow-x: hidden;
+}
+
+#about {
+    overflow-y: hidden;
+}
+
 h3 {
     color: var(--secondary-color);
 }
